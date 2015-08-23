@@ -42,3 +42,25 @@ var printName = {
 }
 
 printName.print();
+
+
+// try to class
+
+class Animal {
+  constructor(sound) {
+    this.sound = sound;
+  }
+
+  say() {
+    console.log(this.sound);
+  }
+
+  static provoke() {
+    console.log('俺は別にあんたが犬に似てるなんて思っちゃいない。ただ犬の方がさ、あんたに似てるもんでね');
+  }
+}
+
+let dogu = new Animal('ワン');
+dogu.say();
+
+Animal.provoke()
