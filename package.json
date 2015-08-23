@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "babel src.js -o out.js"
+    "start"  : "babel module_src.js -o module.js; babel src.js -o out.js"
   }
 }

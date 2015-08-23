@@ -64,3 +64,12 @@ let dogu = new Animal('ワン');
 dogu.say();
 
 Animal.provoke()
+
+// new なしだとエラー
+// let dogu2 = Animal('ワン');
+
+
+// try to module and template
+
+import * as module from './module';
+module.Gun.serif(module.default_gun_name);

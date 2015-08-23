@@ -4,7 +4,18 @@
 
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+// new なしだとエラー
+// let dogu2 = Animal('ワン');
+
+// try to module and template
+
+var _module2 = require('./module');
+
+var _module = _interopRequireWildcard(_module2);
 
 var add = function add(a, b) {
   return a + b;
@@ -78,3 +89,4 @@ var dogu = new Animal('ワン');
 dogu.say();
 
 Animal.provoke();
+_module.Gun.serif(_module.default_gun_name);
